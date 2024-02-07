@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="navigate">
+        <ion-icon name="navigate" style="color: lightgreen"></ion-icon>Navigate
+      </div>
+      <div class="sidebar">
+        <ul>
+          <li style="color: lightgreen">
+            <ion-icon
+              name="chevron-back-outline"
+              style="color: lightgreen"
+            ></ion-icon>
+            Back
+          </li>
+          <li>Premium Quality</li>
+          <li>Organic Goods</li>
+          <li>Naturix Farm</li>
+        </ul>
+      </div>
+      <nav>
+        <div>
+          <img
+            src="images/logo.png"
+            height="70"
+            style="margin-top: 20px"
+            alt="logo"
+          />
+        </div>
+        <div class="nav-links">
+          <ion-icon
+            name="close-sharp"
+            class="menu"
+            style="color: #fff; font-size: 64px"
+            onclick="hideSideBar()"
+          ></ion-icon>
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About us</a>
+            </li>
+            <li>
+              <a href="">Shop</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+            <li>
+              <!-- <img src="images/shop-cart.png" alt="" /> -->
+              <div class="cartContainer">
+                <img src="images/shop-cart.png" alt="" /><span
+                  class="cartText"
+                  >$0.00</span
+                >
+                <div class="cart">1</div>
+              </div>
+           
+              <!-- <span
+              style="
+                display: inline-block;
+                margin-bottom: 5px;
+                color: #fff;
+                font-size: 11px;
+                position: absolute;
+                top: 8%;
+                right: 11.5%;
+              "
+              >$0.00</span
+            >
+            <div class="cart">1</div> -->
+            </li>
+          </ul>
+        </div>
+        <ion-icon
+          name="menu-sharp"
+          class="menu"
+          style="color: #fff; font-size: 64px; margin-top: 25px"
+          onclick="showSideBar()"
+        ></ion-icon>
+      </nav>
+      <div class="promo">
+        <h1>Live <b>Organic</b> for live <b>Healthy</b></h1>
+        <p>ORGANIC MARIJUANA AND LOT MORE TO YOUR DOOR</p>
+        <button class="btn">SHOP NOW</button>
+      </div>
+    </header>
+    <main>
+      <section id="section1">
+        <div class="organic-text">
+          <p>We are <b>Organic Farmfood</b></p>
+          <h6>ABOUT MODI FARMFOOD</h6>
+        </div>
+        <div class="organic-cards">
+          <div class="card">
+            <img src="images/leaf-green.png" class="top-img" alt="" />
+            <div class="card-body">
+              <h3>Fresh from Nautrix Farm</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing eli
+                praesentium veniam.
+              </p>
+              <button class="btnCard">READ MORE</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/leaf-yellow.png" class="top-img" alt="" />
+            <div class="card-body">
+              <h3>Fresh from Nautrix Farm</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing eli
+                praesentium veniam.
+              </p>
+              <button class="btnCard">READ MORE</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/leaf-pink.png" class="top-img" alt="" />
+            <div class="card-body">
+              <h3>Fresh from Nautrix Farm</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing eli
+                praesentium veniam.
+              </p>
+              <button class="btnCard">READ MORE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section2">
+        <div class="organicGoods">
+          <img src="images/devider-leaf.png" alt="" />
+          <p>Modi <b>Organic Goods</b></p>
+          <h6>ABOUT MODI FARMFOOD</h6>
+        </div>
+        <div class="container">
+          <div class="slider-wrapper">
+            <ion-icon
+              name="chevron-back-outline"
+              class="slide-button"
+              id="prev-slide"
+            ></ion-icon>
+            <div class="image-list">
+              <div class="organicCard image-item">
+                <div class="circle">-10%</div>
+                <img src="images/product1.png" alt="" />
+                <div class="orgCardBody">
+                  <h5>Praesent commodo id velit</h5>
+                  <p>$50.00</p>
+                  <button class="btnCard">ADD TO CART</button>
+                </div>
+              </div>
+              <div class="organicCard image-item">
+                <div class="circle">-10%</div>
+                <img src="images/product2.png" alt="" />
+                <div class="orgCardBody">
+                  <h5>Praesent commodo id velit</h5>
+                  <p>$50.00</p>
+                  <button class="btnCard">ADD TO CART</button>
+                </div>
+              </div>
+              <div class="organicCard image-item">
+                <div class="circle">-10%</div>
+                <img src="images/product1.png" alt="" />
+                <div class="orgCardBody">
+                  <h5>Praesent commodo id velit</h5>
+                  <p>$50.00</p>
+                  <button class="btnCard">ADD TO CART</button>
+                </div>
+              </div>
+              <div class="organicCard image-item">
+                <div class="circle">-10%</div>
+                <img src="images/product1.png" alt="" />
+                <div class="orgCardBody">
+                  <h5>Praesent commodo id velit</h5>
+                  <p>$50.00</p>
+                  <button class="btnCard">ADD TO CART</button>
+                </div>
+              </div>
+              <div class="organicCard image-item">
+                <div class="circle">-10%</div>
+                <img src="images/product1.png" alt="" />
+                <div class="orgCardBody">
+                  <h5>Praesent commodo id velit</h5>
+                  <p>$50.00</p>
+                  <button class="btnCard">ADD TO CART</button>
+                </div>
+              </div>
+              <div class="organicCard image-item">
+                <div class="circle">-10%</div>
+                <img src="images/product1.png" alt="" />
+                <div class="orgCardBody">
+                  <h5>Praesent commodo id velit</h5>
+                  <p>$50.00</p>
+                  <button class="btnCard">ADD TO CART</button>
+                </div>
+              </div>
+              <div class="organicCard image-item">
+                <div class="circle">-10%</div>
+                <img src="images/product2.png" alt="" />
+                <div class="orgCardBody">
+                  <h5>Praesent commodo id velit</h5>
+                  <p>$50.00</p>
+                  <button class="btnCard">ADD TO CART</button>
+                </div>
+              </div>
+              
+            </div>
+            <ion-icon
+              name="chevron-forward-outline"
+              class="slide-button"
+              id="next-slide"
+            ></ion-icon>
+            <div class="navigation-button">
+              <span class="dot active" onclick="changeSlide(0)"></span>
+              <span class="dot" onclick="changeSlide(1)"></span>
+              <span class="dot" onclick="changeSlide(2)"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section3">
+        <div class="organic-text">
+          <p>We are <b>Organic Farmfood</b></p>
+          <h6>ABOUT MODI FARMFOOD</h6>
+        </div>
+        <div class="foodDetails">
+          <div class="detailsLeft">
+            <div class="content">
+              <div class="foodText">
+                <h5>Premium Quality</h5>
+                <p>
+                  Lorem ipsum dolor consectetur adipisicing elit. Quia laborum
+                  vitae debitis.
+                </p>
+              </div>
+              <div class="imageContainer">
+                <img src="images/gray-leaf.png" alt="" />
+              </div>
+            </div>
+            <div class="content">
+              <div class="foodText">
+                <h5>Always Fresh</h5>
+                <p>
+                  Lorem ipsum dolor consectetur adipisicing elit. Quia laborum
+                  vitae debitis.
+                </p>
+              </div>
+              <div class="imageContainer">
+                <img src="images/gray-leaf.png" alt="" />
+              </div>
+            </div>
+            <div class="content">
+              <div class="foodText">
+                <h5>100% Natural</h5>
+                <p>
+                  Lorem ipsum dolor consectetur adipisicing elit. Quia laborum
+                  vitae debitis.
+                </p>
+              </div>
+              <div class="imageContainer">
+                <img src="images/gray-leaf.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="farmImages">
+            <div class="image1">
+              <img src="images/organic-logo.png" alt="" />
+            </div>
+            <div class="image2">
+              <img src="images/organic-center-leaf.png" alt="" />
+            </div>
+          </div>
+          <div class="detailsLeft">
+            <div class="content">
+              <div class="imageContainer">
+                <img src="images/gray-leaf.png" alt="" />
+              </div>
+              <div class="foodTextRight">
+                <h5>Premium Quality</h5>
+                <p>
+                  Lorem ipsum dolor consectetur adipisicing elit. Quia laborum
+                  vitae debitis.
+                </p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="imageContainer">
+                <img src="images/gray-leaf.png" alt="" />
+              </div>
+              <div class="foodTextRight">
+                <h5>Always Fresh</h5>
+                <p>
+                  Lorem ipsum dolor consectetur adipisicing elit. Quia laborum
+                  vitae debitis.
+                </p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="imageContainer">
+                <img src="images/gray-leaf.png" alt="" />
+              </div>
+              <div class="foodTextRight">
+                <h5>100% Natural</h5>
+                <p>
+                  Lorem ipsum dolor consectetur adipisicing elit. Quia laborum
+                  vitae debitis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer1">
+        <div class="ftext">
+          <h6>JOIN OUR NEWSLETTER</h6>
+          <h2>Subscribe Newsletter</h2>
+        </div>
+        <div class="searchField">
+          <input
+            type="text"
+            placeholder="Enter your e-mail"
+            class="searchNews"
+          />
+          <button class="subscribe">
+            Subscribe <ion-icon name="navigate" style="color: green"></ion-icon>
+          </button>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="footerLogo">
+          <img src="images/footer-logo.png" alt="" />
+          <p>
+            Lorem ipsum dolor consectetur adipisicing elit. Quia laborum vitae
+            debitis.
+          </p>
+          <p>
+            <ion-icon
+              style="color: red; margin-right: 3px"
+              name="location-outline"
+            ></ion-icon
+            >125/2,Single Street Road, California, United State
+          </p>
+          <p>
+            <ion-icon
+              style="color: red; margin-right: 3px"
+              name="globe-outline"
+            ></ion-icon
+            >www.modimarijuana.com
+          </p>
+          <p>
+            <ion-icon
+              style="color: red; margin-right: 3px"
+              name="mail-outline"
+            ></ion-icon
+            >contact@modimarijuana.com
+          </p>
+        </div>
+        <div class="footerInfo">
+          <h5>Information</h5>
+          <ul>
+            <li>
+              <ion-icon
+                name="chevron-forward-outline"
+                style="color: red"
+              ></ion-icon
+              >About Our Shop
+            </li>
+            <li>
+              <ion-icon
+                name="chevron-forward-outline"
+                style="color: red"
+              ></ion-icon
+              >Top Sellers
+            </li>
+            <li>
+              <ion-icon
+                name="chevron-forward-outline"
+                style="color: red"
+              ></ion-icon
+              >Our Blog
+            </li>
+            <li>
+              <ion-icon
+                name="chevron-forward-outline"
+                style="color: red"
+              ></ion-icon
+              >New Products
+            </li>
+            <li>
+              <ion-icon
+                name="chevron-forward-outline"
+                style="color: red"
+              ></ion-icon
+              >Secure Shopping
+            </li>
+          </ul>
+        </div>
+        <div class="footerAcc">
+          <h5>My Account</h5>
+          <ul>
+            <li>
+              <ion-icon
+                name="chevron-forward-outline"
+                style="color: red"
+              ></ion-icon
+              >My Account
+            </li>
+            <li>
+              <ion-icon
+                name="chevron-forward-outline"
+                style="color: red"
+              ></ion-icon
+              >Discounts
+            </li>
+            <li>
+              <ion-icon
+                name="chevron-forward-outline"
+                style="color: red"
+              ></ion-icon
+              >Personal Information
+            </li>
+            <li>
+              <ion-icon
+                name="chevron-forward-outline"
+                style="color: red"
+              ></ion-icon
+              >My Address
+            </li>
+            <li>
+              <ion-icon
+                name="chevron-forward-outline"
+                style="color: red"
+              ></ion-icon
+              >Order History
+            </li>
+          </ul>
+        </div>
+        <div class="footerInsta">
+          <h5>Photo Instagram</h5>
+          <div class="grid-container">
+            <div class="grid-item">
+              <img src="images/insta1.png" alt="" class="grid-img" />
+            </div>
+            <div class="grid-item">
+              <img class="grid-img" src="images/insta2.png" alt="" />
+            </div>
+            <div class="grid-item">
+              <img class="grid-img" src="images/insta3.png" alt="" />
+            </div>
+            <div class="grid-item">
+              <img class="grid-img" src="images/insta4.png" alt="" />
+            </div>
+            <div class="grid-item">
+              <img class="grid-img" src="images/insta5.png" alt="" />
+            </div>
+            <div class="grid-item">
+              <img class="grid-img" src="images/insta6.png" alt="" />
+            </div>
+            <div class="grid-item">
+              <img class="grid-img" src="images/insta7.png" alt="" />
+            </div>
+            <div class="grid-item">
+              <img class="grid-img" src="images/insta1.png" alt="" />
+            </div>
+            <div class="grid-item">
+              <img class="grid-img" src="images/insta2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer3">
+        <div class="copyright">
+          <div class="leftText">
+            @2024 <span style="color: red">modimarijuana.com</span> made by
+            youwes. all right reserved
+          </div>
+          <div class="rightNav">
+            <div>Contact Us</div>
+            <div>Term Of Use</div>
+            <div>Site Map</div>
+            <div>Privacy Policy</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
